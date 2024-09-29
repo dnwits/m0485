@@ -10,13 +10,21 @@ import java.util.Scanner;
  *
  * @author Val
  */
-public class ex8 {
+public class ex9 {
     public static void main(String[] args) {
+    String sms = null;
+    int edad;
     Scanner edad_u = new Scanner(System.in);
-        System.out.println("Introduzca su edad: ");
-        var edad = edad_u.nextInt();
-        if (edad >= 18) {
-            System.out.println("Eres mayor de edad!");
+    System.out.println("Introduzca su edad: ");
+    edad = edad_u.nextInt();
+        if (edad >= 0) {
+            if (edad >= 18) {
+                sms = "eres mayor de edad.";
+            }
+            else {
+                sms = "eres menor de edad.";
+            }
         }
+    System.out.println(sms);
     }
 }
