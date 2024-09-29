@@ -10,16 +10,19 @@ import java.util.Scanner;
  *
  * @author Val
  */
-public class ex12 {
+public class ex13 {
     public static void main(String[] args) {
-    int a;
+    int a, b;
     Scanner v_a = new Scanner(System.in);
-    System.out.println("Introduzca un número: ");
+    System.out.println("Introduzca el primer número: ");
     a = v_a.nextInt();
-        if (a >= 0){
-            System.out.println("Número positivo ^^");
+    Scanner v_b = new Scanner(System.in);
+    System.out.println("Introduzca el segundo número: ");
+    b = v_b.nextInt();
+        if (a < b){
+            System.out.println(a +" " +b);
         } else {
-            System.out.println("Número negativo :3");
+            System.out.println(b +" " +a);
         }
     }
 }
