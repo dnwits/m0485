@@ -17,7 +17,7 @@ public class ex14 {
     System.out.println("Introduzca el primer número: ");
     a = v_a.nextInt();
     Scanner v_b = new Scanner(System.in);
-    System.out.println("Introduzca el primer número: ");
+    System.out.println("Introduzca el segundo número: ");
     b = v_b.nextInt();
         if (a > b){
             System.out.println(a);
