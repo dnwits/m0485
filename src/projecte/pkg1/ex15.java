@@ -35,3 +35,4 @@ public class ex15 {
             }
     }
 }
+//ta mal :( falta algo porque (8,1,3) 3 !> 8
