@@ -25,7 +25,7 @@ public class ex17 {
     System.out.println("Introduzca los segundos: ");
     sec = sec_u.nextInt();
         if (sec == 59){
-            sec++;
+            //sec++;
         //else if (min == 59){
             
         //}
