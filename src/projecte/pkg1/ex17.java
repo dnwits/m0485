@@ -12,24 +12,31 @@ import java.util.Scanner;
  */
 public class ex17 {
     public static void main(String[] args) {
-    int hora;
+    int hora, min, sec;
     Scanner hora_u = new Scanner(System.in);
     System.out.println("Introduzca la hora: ");
     hora = hora_u.nextInt();
-    int min;
     Scanner min_u = new Scanner(System.in);
     System.out.println("Introduzca los minutos: ");
     min = min_u.nextInt();
-    int sec;
     Scanner sec_u = new Scanner(System.in);
     System.out.println("Introduzca los segundos: ");
     sec = sec_u.nextInt();
         if (sec == 59){
-            //sec++;
-        //else if (min == 59){
-            
-        //}
+            sec = 00;
+            if (min == 59){
+                min = 00;
+                if (hora ==23){
+                    hora = 00;
+                } else {
+                    hora++;
+                }
+            } else {
+                min++;
+            }
+        } else {
+            sec++;
         }
-    
+    System.out.println("Hola 1 segons després: " + hora + ":" + min + ":" + sec);
     }
 }

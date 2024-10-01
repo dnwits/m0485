@@ -30,11 +30,11 @@ public class ex16 {
             //nota_txt = "Notable";
             System.out.println("Notable");
         } else if (9 <= nota && nota <= 10){
-            //nota_txt = "Sobresaliente :3";
+            //nota_txt = "Sobresaliente";
             System.out.println("Sobresaliente :3");
         } else {
             //nota_txt = "Nota introducida errónea";
-            System.out.println("Nota introducida errónea");
+            System.out.println("Nota introducida errónea...");
         }  
             //System.out.println(nota_txt);
     }
