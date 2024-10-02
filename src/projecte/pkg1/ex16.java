@@ -12,30 +12,34 @@ import java.util.Scanner;
  */
 public class ex16 {
     public static void main(String[] args) {
+    /**
+     * Programa que dona un anota (0-10)
+     * de 0 a 3 muy deficiente
+     * de 3 a 5 insuficiente
+     * de 5 a 6 bien
+     * de 6 a 9 notable
+     * de 9 a 10 excelent
+    */
+    //Declarem les variables
     double nota;
-    //String nota_txt;
     Scanner u_nota = new Scanner(System.in);
+    //Demanem a l'usuari la nota i la guardem
     System.out.println("Introduzca una nota: ");
     nota = u_nota.nextDouble();
+    //Comprobar la nota introduida i determinar la nota a mostrar
         if (0 <= nota && nota < 3) {
-            //nota_txt = "Muy deficiente...";
             System.out.println("Muy deficiente...");
         } else if (3 <= nota && nota < 5) {
-            //nota_txt = "Insuficiente";
             System.out.println("Insuficiente");
         } else if (5 <= nota && nota < 6) {
-            //nota_txt = "Bien";
             System.out.println("Bien");
         } else if (6 <= nota && nota < 9){
-            //nota_txt = "Notable";
             System.out.println("Notable");
         } else if (9 <= nota && nota <= 10){
-            //nota_txt = "Sobresaliente";
             System.out.println("Sobresaliente :3");
         } else {
-            //nota_txt = "Nota introducida errónea";
+            //Mensaje de error si nota fuera del rango de 0-10
             System.out.println("Nota introducida errónea...");
         }  
-            //System.out.println(nota_txt);
     }
 }
