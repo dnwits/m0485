@@ -12,7 +12,10 @@ import java.util.Scanner;
  */
 public class ex17 {
     public static void main(String[] args) {
+    //programa que pida la hora, minutos y segundos
+    //que muestra el tiempo tras un segundo
     int hora, min, sec;
+    //declarar las variables y pedir al usuario los datos
     Scanner hora_u = new Scanner(System.in);
     System.out.println("Introduzca la hora: ");
     hora = hora_u.nextInt();
@@ -22,6 +25,9 @@ public class ex17 {
     Scanner sec_u = new Scanner(System.in);
     System.out.println("Introduzca los segundos: ");
     sec = sec_u.nextInt();
+    //Mostrar al usuario la hora actual
+    System.out.println("Hola actual: " + hora + ":" + min + ":" + sec);
+    //Añadimos 1 segundo a la hora y hacemos los condicionales
         if (sec == 59){
             sec = 00;
             if (min == 59){
