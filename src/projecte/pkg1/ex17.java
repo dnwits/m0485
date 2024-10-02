@@ -43,6 +43,6 @@ public class ex17 {
         } else {
             sec++;
         }
-    System.out.println("Hola 1 segons després: " + hora + ":" + min + ":" + sec);
+    System.out.println("Hora 1 segundo después: " + hora + ":" + min + ":" + sec);
     }
 }
